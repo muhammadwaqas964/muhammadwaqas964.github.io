@@ -12,8 +12,8 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e7ebf0;
             color: #333;
             padding: 20px;
         }
@@ -24,7 +24,7 @@
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            border-radius: 12px;
         }
 
         header {
@@ -34,17 +34,18 @@
 
         header h1 {
             font-size: 2.5em;
-            color: #333;
+            color: #0073e6;
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: #666;
         }
 
         header a {
             text-decoration: none;
             color: #0073e6;
+            font-weight: bold;
         }
 
         .section {
@@ -57,6 +58,17 @@
             border-bottom: 2px solid #0073e6;
             padding-bottom: 5px;
             margin-bottom: 10px;
+            position: relative;
+        }
+
+        .section h2::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background-color: #0073e6;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
         }
 
         .job {
@@ -81,10 +93,19 @@
 
         ul {
             list-style-type: none;
+            padding-left: 20px;
         }
 
         ul li {
             margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: '•';
+            color: #0073e6;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
 
         ul li strong {
@@ -92,7 +113,7 @@
         }
 
         section p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-bottom: 10px;
         }
 
