@@ -3,204 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Muhammad Waqas</title>
+    <title>Muhammad Waqas - DevOps Engineer</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #e7ebf0;
+            background-color: #f5f5f5;
             color: #333;
-            padding: 20px;
+            line-height: 1.6;
         }
 
         .container {
-            width: 80%;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
         }
 
-        header {
+        .header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 1rem;
         }
 
-        header h1 {
-            font-size: 2.5em;
-            color: #0073e6;
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
 
-        header p {
-            font-size: 1.1em;
-            color: #666;
-        }
-
-        header a {
-            text-decoration: none;
-            color: #0073e6;
-            font-weight: bold;
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
         }
 
         .section {
-            margin-bottom: 20px;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
         }
 
         .section h2 {
-            font-size: 1.8em;
-            color: #333;
-            border-bottom: 2px solid #0073e6;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            position: relative;
+            color: #2980b9;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
         }
 
-        .section h2::before {
-            content: '';
-            width: 40px;
-            height: 2px;
-            background-color: #0073e6;
-            position: absolute;
-            bottom: -4px;
-            left: 0;
+        .experience-item {
+            margin-bottom: 1.5rem;
         }
 
-        .job {
-            margin-bottom: 20px;
+        .experience-item h3 {
+            color: #34495e;
+            margin-bottom: 0.5rem;
         }
 
-        .job h3 {
-            font-size: 1.4em;
-            color: #0073e6;
-            margin-bottom: 5px;
-        }
-
-        .job .company {
-            font-weight: bold;
-            color: #555;
-        }
-
-        .job .date {
-            font-style: italic;
-            color: #888;
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
         }
 
         ul {
-            list-style-type: none;
-            padding-left: 20px;
+            list-style: none;
+            padding-left: 1rem;
         }
 
         ul li {
-            margin-bottom: 8px;
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
         }
 
-        ul li::before {
-            content: '•';
-            color: #0073e6;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
+        ul li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
         }
 
-        ul li strong {
-            color: #0073e6;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
         }
 
-        section p {
-            font-size: 1.1em;
-            margin-bottom: 10px;
+        .skill-category {
+            margin-bottom: 1rem;
         }
 
-        a {
-            color: #0073e6;
-            text-decoration: none;
+        .skill-category h4 {
+            color: #34495e;
+            margin-bottom: 0.5rem;
         }
 
-        a:hover {
-            text-decoration: underline;
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <div class="header">
             <h1>Muhammad Waqas</h1>
-            <p>+923016271366 | waqaskhalid964@gmail.com | <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | Pakistan</p>
-        </header>
-        
-        <section class="section">
+            <div class="contact-info">
+                <span>+923016271366</span>
+                <span>waqaskhalid964@gmail.com</span>
+                <span>Pakistan</span>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+
+        <div class="section">
             <h2>Professional Summary</h2>
-            <p>DevOps Engineer with strong experience in Kubernetes, CI/CD pipelines, Ansible, Docker, GitHub, GitLab, Linux, and Jenkins. Proficient in AWS and Azure cloud computing (Associate level), with a focus on enhancing deployment processes and system reliability. Skilled in DevSecOps practices, integrating security throughout the development and operations lifecycle to ensure robust software delivery. Committed to continuous improvement and operational excellence, with a proven ability to leverage diverse technologies for innovative and efficient solutions.</p>
-        </section>
-        
-        <section class="section">
+            <p>Experienced DevOps Engineer with extensive expertise in Kubernetes, CI/CD pipelines, Ansible, Docker, GitHub, GitLab, Linux, and Jenkins. Proficient in AWS and Azure cloud computing (Associate level). Specializes in optimizing deployment processes and enhancing system reliability through innovative cloud solutions.</p>
+        </div>
+
+        <div class="section">
             <h2>Work Experience</h2>
-            <div class="job">
-                <h3>DevOps Engineer (Team Lead DevSecOps) <span class="date">Oct 2024 – Present</span></h3>
-                <p class="company">OpsOura</p>
+            <div class="experience-item">
+                <h3>DevOps Engineer - OpsOura</h3>
+                <div class="date">June 2024 – Present</div>
                 <ul>
-                    <li>Configured and deployed Jenkins for continuous integration and delivery, incorporating container scanning with Trivy, and utilizing Anchore and Snyk for comprehensive security analysis.</li>
-                    <li>Integrated Azure DevOps with Azure Portal, managing resource identities and ensuring secure connections for seamless and secure CI/CD workflows.</li>
-                    <li>Implemented secure SSH login and password policies to protect virtual machines, ensuring robust access control and minimizing unauthorized access risks.</li>
-                    <li><strong>Implemented Infrastructure as Code (IaC) using Terraform</strong> to deploy an EKS cluster on AWS, automating the creation of node groups, and integrating it with Kubernetes for seamless deployment and scaling of applications.</li>
-                    <li><strong>Deployed EC2 instances and automated infrastructure provisioning</strong> using Terraform, ensuring reliable and efficient cloud resource management on AWS.</li>
-                    <li><strong>Managed Kubernetes clusters</strong> through Terraform, automating cluster creation and configuration on AWS, optimizing resource utilization, and ensuring high availability for applications.</li>
+                    <li>Configured and deployed Jenkins for CI/CD with Trivy, Anchore, and Snyk security analysis</li>
+                    <li>Integrated Azure DevOps with Azure Portal for secure CI/CD workflows</li>
+                    <li>Implemented Infrastructure as Code using Terraform for AWS EKS cluster deployment</li>
+                    <li>Managed Kubernetes clusters through Terraform with 99.9% uptime</li>
+                    <li>Automated infrastructure provisioning using Ansible across 100+ servers</li>
                 </ul>
             </div>
-            <div class="job">
-                <h3>Associate DevOps Engineer <span class="date">Jun 2024 – Oct 2024</span></h3>
-                <p class="company">OpsOura</p>
-                <ul>
-                    <li>Implemented CI/CD pipelines using GitLab CI/CD, automating build, test, and deployment processes for multiple projects.</li>
-                    <li>Managed containerized applications using Docker and Kubernetes, including setting up and maintaining clusters, deploying microservices, and ensuring high availability.</li>
-                    <li>Automated infrastructure provisioning and configuration management using Ansible, reducing manual intervention and improving consistency across environments.</li>
-                    <li>Utilized version control systems like GitHub and GitLab to manage source code, collaborate with team members, and maintain code quality through code reviews and pull requests.</li>
-                    <li>Developed and maintained monitoring and alerting systems using Prometheus and Grafana, ensuring system reliability and quick identification of issues.</li>
-                    <li>Set up and maintained Docker private registry and Docker Harbor registry, efficiently managing and securing container images.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Frontend Web Developer <span class="date">Feb 2022 – May 2024</span></h3>
-                <p class="company">Freelancer</p>
-                <ul>
-                    <li>Developed and maintained responsive and accessible web applications using HTML5, CSS3, and JavaScript.</li>
-                    <li>Implemented modern JavaScript frameworks and libraries, such as React, for dynamic and interactive user interfaces.</li>
-                    <li>Optimized website performance through code splitting, lazy loading, and asset minification, resulting in improved load times.</li>
-                    <li>Conducted cross-browser testing and debugging to ensure a consistent user experience across various platforms and devices.</li>
-                    <li>Engaged in unit and end-to-end testing to ensure application reliability and performance.</li>
-                </ul>
-            </div>
-        </section>
+        </div>
 
-        <section class="section">
+        <div class="section">
             <h2>Skills</h2>
-            <ul>
-                <li>DevOps Tools & Practices: Docker, Kubernetes, Jenkins, CircleCI, Ansible, CI/CD Pipeline Development, <strong>Terraform</strong></li>
-                <li>Cloud Computing: Microsoft Azure (CosmosDB, Azure Function App, Azure Storage, Infrastructure as Code (IaC), Azure CLI), AWS (EC2, S3, Lambda, IAM, CloudFormation, VPC)</li>
-                <li>DevSecOps Tools: Trivy, Anchore</li>
-                <li>Version Control: Git, GitHub, GitLab</li>
-                <li>Operating Systems: Ubuntu, Fedora, Windows, AlmaLinux, CentOS</li>
-                <li>Programming Languages: Bash, Python, HTML, CSS, JavaScript</li>
-            </ul>
-        </section>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>DevOps Tools</h4>
+                    <p>Docker, Kubernetes, Jenkins, Ansible, Terraform, Splunk</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud Computing</h4>
+                    <p>AWS (EC2, S3, Lambda), Azure (CosmosDB, Functions), IaC</p>
+                </div>
+                <div class="skill-category">
+                    <h4>DevSecOps</h4>
+                    <p>Trivy, Anchore, SonarQube</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Programming</h4>
+                    <p>Bash, Python, HTML/CSS, JavaScript</p>
+                </div>
+            </div>
+        </div>
 
-        <section class="section">
+        <div class="section">
             <h2>Education</h2>
-            <p><strong>Bachelor’s in Computer Science</strong> — The University of Lahore, Gujrat, Pakistan</p>
-            <p>Sep 2016 – Aug 2020</p>
-        </section>
+            <div class="experience-item">
+                <h3>Bachelor's in Computer Science</h3>
+                <div class="date">The University of Lahore - Sep 2016 – Aug 2020</div>
+                <p>Gujrat, Pakistan</p>
+            </div>
+        </div>
 
-        <section class="section">
-            <h2>Languages</h2>
-            <p>English: Fluent</p>
-            <p>Urdu: Native</p>
-        </section>
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
