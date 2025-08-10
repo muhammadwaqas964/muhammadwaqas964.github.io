@@ -3,122 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Muhammad Waqas</title>
+    <title>Muhammad Waqas - DevOps Engineer Resume</title>
+    <!-- Use Tailwind CSS for modern, professional styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use a professional font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Style for section headings */
+        h2 {
+            position: relative;
+            font-weight: 700;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
-        h1, h2, h3 {
-            color: #007BFF;
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3b82f6; /* Blue accent line */
+            border-radius: 9999px;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
+        /* Style for list items in sections */
+        .resume-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: flex-start;
         }
-        .header h1 {
-            margin: 0;
-        }
-        .header p {
-            margin: 5px 0;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .section ul li {
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
+        .resume-list li::before {
+            content: "•";
+            color: #3b82f6; /* Blue bullet point */
+            font-size: 1.25rem;
+            line-height: 1;
+            margin-right: 0.5rem;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Muhammad Waqas</h1>
-            <p>+923016271366 | waqaskhalid964@gmail.com | Pakistan</p>
-            <p><a href="https://www.linkedin.com/in/muhammad-waqas366/">LinkedIn</a> | <a href="https://github.com/muhammadwaqas964">GitHub</a></p>      
-        </div>
-        <div class="section">
-            <h2>Professional Summary</h2>  
-            <p>Experienced DevOps Engineer with extensive expertise in Kubernetes, CI/CD pipelines, Ansible, Docker, GitHub, GitLab, Linux, and Jenkins. Proficient in AWS and Azure cloud computing (Associate level), Specializes in optimizing deployment processes and enhancing system reliability through innovative cloud solutions. Skilled in implementing DevSecOps practices by integrating security throughout the development and operations lifecycle, ensuring robust, secure, and compliant software delivery. Committed to continuous improvement and operational excellence, leveraging diverse technologies to develop efficient solutions that drive business value. Proven ability to adapt and innovate in dynamic environments, consistently delivering projects that meet and exceed organizational objectives.</p>
-        </div>
-        <div class="section">
-            <h2>Work Experience</h2>
-            <h3>DevOps Engineer</h3>
-            <p>OpsOura—June 2024– Present</p>
-            <ul>
-                <li>Automated CI/CD pipelines using Jenkins, GitLab CI/CD, and Azure DevOps, integrating Travis, Anchore, and Snyk for container security scanning and vulnerability analysis.</li>
-                <li>Designed and deployed AWS infrastructure (EKS clusters, EC2 instances) via Terraform, optimizing resource provisioning and scalability for Kubernetes-driven environments.</li>
-                <li>Strengthened cloud security by enforcing SSH key-based authentication, IAM policies, and Azure resource identity management for secure CI/CD workflows.</li>
-                <li>Managed Kubernetes clusters for container orchestration, automating deployment, scaling, and configuration using Ansible and Terraform.</li>
-                <li>Established monitoring and alerting systems with Prometheus and Grafana to enhance system reliability and expedite issue resolution.</li>
-                <li>Maintained private Docker registries (Harbor) for secure container image storage, version control, and compliance.</li>
-                <li>Optimized Kubernetes workloads through resource allocation strategies and autoscaling policies, improving application performance and infrastructure efficiency.</li>
-            </ul>
-            <h3>Frontend Web Developer</h3>
-            <p>Feb 2022 – May 2024</p>
-            <ul>
-                <li>Developed and maintained responsive and accessible web applications using HTML5, CSS3, and JavaScript.</li>
-                <li>Implemented modern JavaScript frameworks and libraries, such as React, for dynamic and interactive user interfaces.</li>
-                <li>Optimized website performance through code splitting, lazy loading, and asset minification, improving load times.</li>
-                <li>Conducted cross-browser testing and debugging to ensure a consistent user experience across various platforms and devices.</li>
-                <li>Engaged in unit and end-to-end testing to ensure application reliability and performance.</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Technical Skills:</strong> Docker, Kubernetes, Jenkins, CircleCI, Ansible, CI/CD Pipeline Development, Terraform & Terraform-Cloud, Splunk.</li>
-                <li><strong>Cloud Computing:</strong> Microsoft Azure (CosmosDB, Azure Function App, Azure Storage, Infrastructure as Code (IaC), Azure CLI), AWS (EC2, S3, Lambda, IAM, CloudFormation, VPC).</li>
-                <li><strong>DevSecOps Tools:</strong> Trivy, Anchore, SonarQube.</li>
-                <li><strong>Version Control:</strong> Git, GitHub, GitLab.</li>
-                <li><strong>Operating Systems:</strong> Ubuntu, Fedora, Windows, AlmaLinux, CentOS.</li>
-                <li><strong>Programming Languages:</strong> Bash, Python, HTML, CSS, JavaScript.</li>
-                <li><strong>Soft Skills:</strong> Team Collaboration, Problem-Solving, Time Management.</li>  
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
-                <li>Azure Administrator Associate</li>  
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Education</h2>
-            <p>Bachelor’s in Computer Science,<br>
-            The University of Lahore, Sep 2016-Aug 2020,<br>
-            Gujrat, Pakistan</p>
-        </div>
-        <div class="section">
-            <h2>Languages</h2>
-            <ul>
+<body class="antialiased">
+
+    <!-- Main container for the resume -->
+    <div class="max-w-4xl mx-auto my-10 bg-white shadow-xl rounded-2xl overflow-hidden p-6 md:p-10 lg:p-12">
+
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-4 border-b-2 border-gray-200">
+            <div>
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-800 tracking-tight leading-tight">Muhammad Waqas</h1>
+                <p class="text-xl text-gray-600 mt-2">DevOps Engineer</p>
+            </div>
+            <div class="mt-4 md:mt-0 text-right space-y-1 text-gray-600 text-sm">
+                <div class="flex items-center justify-end">
+                    <i class="fa-solid fa-phone mr-2 text-blue-500"></i>
+                    <a href="tel:+923016271366" class="hover:text-blue-500 transition-colors">+923016271366</a>
+                </div>
+                <div class="flex items-center justify-end">
+                    <i class="fa-solid fa-envelope mr-2 text-blue-500"></i>
+                    <a href="mailto:waqaskhalid964@gmail.com" class="hover:text-blue-500 transition-colors">waqaskhalid964@gmail.com</a>
+                </div>
+                <div class="flex items-center justify-end">
+                    <i class="fa-brands fa-linkedin mr-2 text-blue-500"></i>
+                    <a href="https://www.linkedin.com/in/muhammad-waqas366" class="hover:text-blue-500 transition-colors" target="_blank">LinkedIn</a>
+                </div>
+                <div class="flex items-center justify-end">
+                    <i class="fa-brands fa-github mr-2 text-blue-500"></i>
+                    <a href="https://github.com/muhammadwaqas964" class="hover:text-blue-500 transition-colors" target="_blank">GitHub</a>
+                </div>
+                <div class="flex items-center justify-end">
+                    <i class="fa-solid fa-location-dot mr-2 text-blue-500"></i>
+                    <span>Pakistan</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl text-gray-700">Professional Summary</h2>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                Experienced DevOps Engineer with around 3 years of experience specializing in DevOps and automation. Skilled in <strong>Kubernetes</strong>, <strong>CI/CD pipelines</strong>, <strong>Ansible</strong>, <strong>Docker</strong>, <strong>GitHub</strong>, <strong>GitLab</strong>, <strong>Linux</strong>, and <strong>Jenkins</strong>. Proficient in <strong>AWS</strong> and <strong>Azure</strong> cloud computing (Associate level). Expert in optimizing deployment processes and enhancing system reliability with innovative cloud solutions. Experienced in <strong>DevSecOps</strong> practices to ensure secure and compliant software delivery.
+            </p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl text-gray-700">Work Experience</h2>
+            
+            <!-- Job 1 -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="text-lg font-bold text-gray-800">DevOps Engineer</h3>
+                    <span class="text-sm text-gray-500">June 2024 – Present</span>
+                </div>
+                <p class="text-md text-gray-600"><strong>OpsOura</strong></p>
+                <ul class="list-disc resume-list text-gray-700 mt-2 ml-4 space-y-1">
+                    <li>Delivered scalable cloud infrastructure and automated CI/CD pipelines using GitHub Actions, GitLab CI/CD, Travis CI, Anchore, and SonarQube.</li>
+                    <li>Managed AWS and Azure cloud environments and completed real-time projects using Terraform and Ansible.</li>
+                    <li>Operated private Docker registries including Docker Hub and Harbor.</li>
+                    <li>Optimized Kubernetes clusters using resource limits, namespaces, health probes, and managed workloads with Deployments, ReplicaSets, and Services.</li>
+                    <li>Automated deployments and rolling updates through CI/CD pipelines and configured Ingress controllers and Helm charts for scalable routing.</li>
+                </ul>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="text-lg font-bold text-gray-800">Frontend Web Developer</h3>
+                    <span class="text-sm text-gray-500">Feb 2022 – May 2024</span>
+                </div>
+                <ul class="list-disc resume-list text-gray-700 mt-2 ml-4 space-y-1">
+                    <li>Automated web-related solutions for developers.</li>
+                    <li>Developed and maintained responsive web applications using HTML5, CSS3, JavaScript, and React.</li>
+                    <li>Optimized website performance with code splitting, lazy loading, and asset minification.</li>
+                    <li>Conducted cross-browser testing and debugging.</li>
+                    <li>Performed unit and end-to-end testing to ensure application reliability.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl text-gray-700">Projects</h2>
+            
+            <!-- Project 1 -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-gray-800">Docker Swarm Multi-node ERP Deployment with Odoo & PostgreSQL (AWS Cloud)</h3>
+                <ul class="list-disc resume-list text-gray-700 mt-2 ml-4 space-y-1">
+                    <li>Designed and deployed a scalable Docker Swarm cluster running Odoo ERP and PostgreSQL on AWS.</li>
+                    <li>Architected multi-node Swarm with Traefik and Portainer for high availability.</li>
+                    <li>Configured dedicated PostgreSQL node for optimized database performance.</li>
+                    <li>Automated service discovery and load balancing with Traefik.</li>
+                    <li>Managed AWS VMs with fault tolerance and scalability.</li>
+                    <li class="mt-2 text-sm text-gray-500 resume-list-item-no-bullet"><strong class="font-semibold text-gray-700">Technologies:</strong> Docker Swarm, Traefik, Portainer, Odoo, PostgreSQL, AWS EC2</li>
+                </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-gray-800">Kubernetes Development Environment and GitLab CI/CD Integration</h3>
+                <ul class="list-disc resume-list text-gray-700 mt-2 ml-4 space-y-1">
+                    <li>Built lightweight Kubernetes (K3s) dev environment focusing on resource efficiency.</li>
+                    <li>Documented installation requirements and created README.</li>
+                    <li>Created and tested K3s clusters manually and automated with Terraform.</li>
+                    <li>Integrated GitLab CI/CD for Kubernetes cluster deployments.</li>
+                    <li class="mt-2 text-sm text-gray-500 resume-list-item-no-bullet"><strong class="font-semibold text-gray-700">Technologies:</strong> Kubernetes (K3s), Terraform, GitLab CI/CD</li>
+                </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-gray-800">GitOps CI/CD Automation with Argo CD and Argo Workflows</h3>
+                <ul class="list-disc resume-list text-gray-700 mt-2 ml-4 space-y-1">
+                    <li>Installed and secured Argo CD and Argo Workflows using Traefik and Cloudflare DNS.</li>
+                    <li>Configured namespaces and connected Git repos for continuous deployment.</li>
+                    <li>Created YAML manifests for Argo Workflows to automate pipelines.</li>
+                    <li class="mt-2 text-sm text-gray-500 resume-list-item-no-bullet"><strong class="font-semibold text-gray-700">Technologies:</strong> Argo CD, Argo Workflows, Traefik, Cloudflare DNS, Kubernetes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl text-gray-700">Skills & Certifications</h2>
+            
+            <div class="mb-4">
+                <h3 class="text-lg font-bold text-gray-800">Technical Skills</h3>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold text-gray-700">DevOps Tools & Practices</h4>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Docker</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Kubernetes</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">CI/CD Pipeline Development</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Jenkins</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">CircleCI</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Ansible</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Terraform & Terraform-Cloud</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Splunk</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="font-semibold text-gray-700">Cloud Computing</h4>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Microsoft Azure (CosmosDB, Function App, Storage, IaC, CLI)</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">AWS (EC2, S3, Lambda, IAM, CloudFormation, VPC)</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold text-gray-700">DevSecOps Tools</h4>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Trivy</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Anchore</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">SonarQube</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold text-gray-700">Version Control</h4>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Git</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">GitHub</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">GitLab</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold text-gray-700">Operating Systems</h4>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Ubuntu</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Fedora</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Windows</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">AlmaLinux</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">CentOS</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold text-gray-700">Programming Languages</h4>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Bash</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Python</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">HTML</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">CSS</li>
+                        <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-bold text-gray-800">Soft Skills</h3>
+                <ul class="flex flex-wrap gap-2 mt-2">
+                    <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Team Collaboration</li>
+                    <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Problem-Solving</li>
+                    <li class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Time Management</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-gray-800 mt-6">Certifications</h3>
+                <ul class="resume-list text-gray-700 mt-2 ml-4 space-y-1">
+                    <li><a href="https://learn.microsoft.com/en-us/users/muhammadwaqas-1902/credentials/99d656bf2d896b07?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="hover:underline text-blue-500" target="_blank">Microsoft Certified: Azure Administrator Associate (AZ-104)</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl text-gray-700">Education</h2>
+            <div class="flex justify-between items-baseline mb-1">
+                <h3 class="text-lg font-bold text-gray-800">Bachelor’s in Computer Science</h3>
+                <span class="text-sm text-gray-500">Sep 2016 – Aug 2020</span>
+            </div>
+            <p class="text-md text-gray-600">The University of Lahore</p>
+        </section>
+        
+        <!-- Languages Section -->
+        <section>
+            <h2 class="text-2xl text-gray-700">Languages</h2>
+            <ul class="resume-list text-gray-700 mt-2 ml-4 space-y-1">
                 <li>English</li>
                 <li>Urdu</li>
             </ul>
-        </div>
+        </section>
+
     </div>
+
 </body>
 </html>
