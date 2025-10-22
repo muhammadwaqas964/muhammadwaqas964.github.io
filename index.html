@@ -3,176 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Waqas | DevOps Engineer</title>
+    <title>Muhammad Waqas | DevOps Portfolio</title>
     <style>
-        /* Basic Reset and Typography */
+        /* Base Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
+            background-color: #f0f2f5;
             color: #333;
             line-height: 1.6;
         }
-
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 40px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            padding: 0 20px;
         }
-
-        /* Header and Contact Info */
+        
+        /* Header & Navigation */
         .header {
             text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #007bff;
-            margin-bottom: 30px;
+            padding: 30px 0;
+            background-color: #ffffff;
+            border-bottom: 5px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
         }
-
-        /* Profile Picture Styling */
         .profile-pic {
             width: 120px;
             height: 120px;
-            border-radius: 50%; /* Makes it circular */
-            object-fit: cover; /* Ensures image fills the circle */
+            border-radius: 50%;
+            object-fit: cover;
             margin: 0 auto 15px auto;
             border: 4px solid #007bff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             display: block;
         }
-
         .header h1 {
             color: #2c3e50;
             margin-bottom: 5px;
-            font-size: 2.5em;
+            font-size: 2.8em;
         }
-
         .header h2 {
             color: #007bff;
             margin-top: 0;
             font-weight: 300;
-            font-size: 1.4em;
+            font-size: 1.6em;
         }
-
         .contact-info {
             margin-top: 15px;
             font-size: 0.9em;
             color: #666;
         }
-
         .contact-info a {
             color: #007bff;
             text-decoration: none;
             margin: 0 10px;
+            font-weight: 600;
         }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
+        
         /* Section Styling */
         .section {
+            background-color: #ffffff;
+            padding: 30px;
             margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
-
         .section h3 {
             color: #2c3e50;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-
-        /* Experience and List Styling */
-        .experience-item, .education-item {
+            font-size: 1.8em;
             margin-bottom: 20px;
-            padding-left: 15px;
-            border-left: 4px solid #007bff;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007bff;
         }
-
-        .experience-item h4 {
-            margin: 0 0 5px 0;
-            font-size: 1.2em;
-            color: #333;
+        
+        /* Project Card Styling (New) */
+        #projects h3 {
+            border-bottom-color: #2ecc71; /* Green border for Projects */
         }
-
-        .experience-item p.duration {
-            font-style: italic;
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        .project-list li {
-            margin-bottom: 10px;
-        }
-
-        /* Skills Grid */
-        .skills-grid {
+        .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
-
-        .skill-category {
-            padding: 10px;
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
+        .project-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
-        .skill-category h4 {
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+        .project-content {
+            padding: 15px;
+        }
+        .project-content h4 {
             color: #007bff;
             margin-top: 0;
+            font-size: 1.3em;
             margin-bottom: 10px;
-            font-size: 1.1em;
-            border-bottom: 1px dashed #eee;
-            padding-bottom: 5px;
-            display: flex; /* For aligning icon and text */
-            align-items: center;
         }
-
-        /* Skill Icon Styling */
-        .skill-category h4 img {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-            vertical-align: middle;
+        .project-content p {
+            font-size: 0.95em;
+            color: #555;
         }
-
+        /* Skills Grid Styling */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .skill-category {
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f7faff;
+        }
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
         .skill-category ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
         }
-
         .skill-category li {
             background-color: #e9f5ff;
             padding: 5px 10px;
-            margin-bottom: 5px;
             border-radius: 4px;
-            font-size: 0.9em;
+            font-size: 0.85em;
+            font-weight: 500;
         }
-
+        
         /* Responsive Design */
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .container {
-                margin: 20px 10px;
-                padding: 20px;
+                margin: 20px 0;
+                padding: 0 10px;
+            }
+            .projects-grid, .skills-grid {
+                grid-template-columns: 1fr;
             }
             .header h1 {
-                font-size: 2em;
-            }
-            .header h2 {
-                font-size: 1.2em;
-            }
-            .contact-info a {
-                display: block;
-                margin: 5px 0;
-            }
-            .skills-grid {
-                grid-template-columns: 1fr;
+                font-size: 2.2em;
             }
         }
     </style>
@@ -181,12 +170,12 @@
     <div class="container">
         
         <header class="header">
-            <img src="Images/DSC_5934.JPG" alt="Muhammad Waqas Profile Picture" class="profile-pic">
+            <img src="Images/Muhammadwaqas.JPG" alt="Muhammad Waqas Profile Picture" class="profile-pic">
             
             <h1>Muhammad Waqas</h1>
             <h2>DevOps Engineer</h2>
             <div class="contact-info">
-                <span><a href="tel:+923016271366">+923016271366</a> | Pakistan [cite: 3, 4]</span>
+                <span><a href="tel:+923016271366">+923016271366</a> | Pakistan</span>
                 <br>
                 <a href="mailto:your.email@gmail.com" target="_blank">Gmail</a> | 
                 <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
@@ -194,100 +183,107 @@
             </div>
         </header>
 
-        <section class="section">
+        <section class="section" id="summary">
             <h3>Professional Summary</h3>
             <p>
-                Experienced **DevOps Engineer** with around 3 years of experience specializing in DevOps and automation[cite: 7]. Skilled in Kubernetes, CI/CD pipelines, Ansible, Docker, GitHub, GitLab, Linux, and Jenkins[cite: 8]. Proficient in **AWS and Azure** cloud computing (Associate level)[cite: 9]. Expert in optimizing deployment processes and enhancing system reliability with innovative cloud solutions[cite: 9]. Experienced in **DevSecOps** practices to ensure secure and compliant software delivery[cite: 10].
+                Experienced **DevOps Engineer** with around 3 years of experience specializing in DevOps and automation. Skilled in Kubernetes, CI/CD pipelines, Ansible, Docker, GitHub, GitLab, Linux, and Jenkins. Proficient in **AWS and Azure** cloud computing (Associate level). Expert in optimizing deployment processes and enhancing system reliability with innovative cloud solutions. Experienced in **DevSecOps** practices to ensure secure and compliant software delivery.
             </p>
         </section>
 
-        <section class="section">
-            <h3>Work Experience</h3>
-            
-            <div class="experience-item">
-                <h4>DevOps Engineer - OpsOura [cite: 12]</h4>
-                <p class="duration">June 2024 - Present [cite: 13]</p>
-                <ul class="project-list">
-                    <li>Delivered scalable cloud infrastructure and automated CI/CD pipelines using **GitHub Actions**, **GitLab CI/CD**, Travis CI, Anchore, and SonarQube, reducing deployment time from hours to minutes[cite: 14].</li>
-                    <li>Managed **AWS** and **Azure** cloud environments, provisioning infrastructure with **Terraform** and **Ansible** for high-availability, fault-tolerant systems[cite: 15].</li>
-                    <li>Optimized **Kubernetes** clusters using resource limits, namespaces, health probes, and managed workloads with Deployments, ReplicaSets, and Services; configured Ingress controllers and **Helm** charts for scalable routing[cite: 17, 18].</li>
-                    <li>**GitOps Automation with Argo CD & Argo Workflows**: Implemented GitOps workflows for Kubernetes clusters, automating continuous deployments via YAML-based pipelines[cite: 22, 23].</li>
-                </ul>
-            </div>
+        <hr>
 
-            <div class="experience-item">
-                <h4>Frontend Web Developer [cite: 24]</h4>
-                <p class="duration">Feb 2022 - March 2024 [cite: 25]</p>
-                <ul class="project-list">
-                    <li>Developed and maintained responsive web applications using **HTML5**, **CSS3**, **JavaScript**, and **React**[cite: 27].</li>
-                    <li>Optimized website performance with code splitting, lazy loading, and asset minification[cite: 28].</li>
-                </ul>
+        <section class="section" id="projects">
+            <h3>Featured DevOps Projects</h3>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <img src="Images/CICDAutomation.png" alt="CI/CD Pipeline running">
+                    <div class="project-content">
+                        <h4>CI/CD Pipeline Automation</h4>
+                        <p>Delivered scalable cloud infrastructure and automated CI/CD pipelines using **GitHub Actions**, **GitLab CI/CD**, Travis CI, Anchore, and SonarQube, reducing deployment time from hours to minutes.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Images/AWSAzure Provisioning.png" alt="Terraform code provisioning multi-cloud">
+                    <div class="project-content">
+                        <h4>Multi-Cloud IaC Provisioning</h4>
+                        <p>Managed **AWS** and **Azure** cloud environments, provisioning infrastructure with **Terraform** and **Ansible** for high-availability and fault-tolerant systems.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Images/Kubernetes Optimization.png" alt="Kubernetes cluster dashboard">
+                    <div class="project-content">
+                        <h4>Kubernetes Cluster Optimization</h4>
+                        <p>Optimized **Kubernetes** clusters using resource limits, namespaces, health probes, and managed workloads with Deployments, ReplicaSets, and Services; configured Ingress controllers and **Helm** charts for scalable routing.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Images/Docker Swarm ERP.png" alt="Docker Swarm running Odoo ERP">
+                    <div class="project-content">
+                        <h4>Docker Swarm Multi-Node ERP</h4>
+                        <p>Architected and deployed a high-availability Docker Swarm cluster running Odoo ERP and PostgreSQL on AWS EC2, improving database performance by 30% and ensuring fault tolerance.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Images/GitOps.png" alt="Argo CD UI showing sync status">
+                    <div class="project-content">
+                        <h4>GitOps Automation with Argo CD</h4>
+                        <p>Implemented GitOps workflows for Kubernetes clusters, securing **Argo CD** and **Argo Workflows** and automating continuous deployments via YAML-based pipelines.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="section">
-            <h3>Skills & Certifications</h3>
+        <hr>
 
+        <section class="section" id="skills">
+            <h3>Technical Skills</h3>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h4>
-                        <img src="Images/Gemini_Generated_Image_fpkcj3fpkcj3fpkc.png" alt="DevOps Tools Icon">
-                        DevOps Tools & Practices
-                    </h4>
+                    <h4>DevOps Tools & Practices</h4>
                     <ul>
-                        <li>Docker, Kubernetes [cite: 33]</li>
-                        <li>CI/CD Pipeline Development, Jenkins, CircleCI [cite: 33]</li>
-                        <li>Ansible, Terraform & Terraform-Cloud [cite: 33]</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>CI/CD Pipeline Development</li>
+                        <li>Jenkins, CircleCI</li>
+                        <li>Ansible, Terraform</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h4>
-                        <img src="Images/Gemini_Generated_Image_fpkcj3fpkcj3fpkc (2).png" alt="Cloud Icon">
-                        Cloud Computing
-                    </h4>
+                    <h4>Cloud Computing</h4>
                     <ul>
-                        <li>**AWS**: EC2, S3, Lambda, IAM, CloudFormation, VPC [cite: 34]</li>
-                        <li>**Azure**: CosmosDB, Function App, Storage, IaC, CLI [cite: 34]</li>
+                        <li>AWS (EC2, S3, Lambda, IAM, VPC)</li>
+                        <li>Azure (CosmosDB, Function App, IaC)</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h4>
-                        <img src="Images/Gemini_Generated_Image_fpkcj3fpkcj3fpkc (3).png" alt="Code Icon">
-                        Languages & OS
-                    </h4>
+                    <h4>DevSecOps & Version Control</h4>
                     <ul>
-                        <li>Bash, Python, HTML, CSS, JavaScript [cite: 39]</li>
-                        <li>Ubuntu, Fedora, Windows, AlmaLinux, CentOS [cite: 38]</li>
+                        <li>Trivy, Anchore, SonarQube</li>
+                        <li>Git, GitHub, GitLab</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h4>
-                        <img src="Images/Gemini_Generated_Image_fpkcj3fpkcj3fpkc (1).png" alt="Security/Git Icon">
-                        DevSecOps & Version Control
-                    </h4>
+                    <h4>Languages & OS</h4>
                     <ul>
-                        <li>Trivy, Anchore, SonarQube [cite: 35]</li>
-                        <li>Git, GitHub, GitLab [cite: 37]</li>
+                        <li>Bash, Python, JavaScript</li>
+                        <li>HTML, CSS</li>
+                        <li>Ubuntu, AlmaLinux, CentOS</li>
                     </ul>
                 </div>
             </div>
 
-            <div style="margin-top: 20px;">
+            <div style="margin-top: 30px;">
                 <h4>Certifications</h4>
-                <ul>
-                    <li>**Microsoft Certified: Azure Administrator Associate (AZ-104)** [cite: 46]</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h3>Education</h3>
-            <div class="education-item">
-                <h4>Bachelors in Computer Science - The University of Lahore [cite: 48]</h4>
-                <p class="duration">Sep 2016 - Aug 2020 [cite: 52]</p>
+                <p>Microsoft Certified: Azure Administrator Associate (AZ-104)</p>
             </div>
         </section>
 
