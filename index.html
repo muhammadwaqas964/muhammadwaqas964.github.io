@@ -40,6 +40,7 @@
                 <a href="#" class="text-xl font-bold text-white">Muhammad Waqas</a>
                 <div class="hidden sm:flex items-center space-x-6">
                     <a href="#summary" class="text-gray-300 hover:text-white transition-colors">Summary</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experience</a>
                     <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
                     <a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a>
                 </div>
@@ -82,8 +83,33 @@
             </p>
         </section>
 
+        <!-- Experience Section --><section class="section bg-slate-800 rounded-xl shadow-lg p-8 sm:p-10 mb-8" id="experience">
+            <h3 class="text-2xl sm:text-3xl font-semibold text-white mb-6 pb-3 border-b-2 border-primary">Experience</h3>
+            <div class="space-y-8">
+
+                <div class="border-l-2 border-primary-light pl-5">
+                    <h4 class="text-xl font-semibold text-white">DevOps Engineer <span class="text-primary-light font-normal">&mdash; OpsOura</span></h4>
+                    <p class="text-sm text-gray-500 mb-2">Jun 2024 &ndash; Present &middot; Punjab, Pakistan (Hybrid)</p>
+                    <p class="text-gray-400 leading-relaxed">Zero-downtime GCP migration of a 12-database multi-tenant platform, 15+ production CI/CD pipelines with security gates (Trivy, Anchore, SonarQube), GitOps on production Kubernetes with Argo CD, private Harbor registry operations, and multi-cloud IaC with Terraform and Ansible. Promoted from Associate DevOps Engineer within 4 months.</p>
+                </div>
+
+                <div class="border-l-2 border-primary-light pl-5">
+                    <h4 class="text-xl font-semibold text-white">DevOps Engineer <span class="text-primary-light font-normal">&mdash; Bespoke Labs (Part-Time Contract)</span></h4>
+                    <p class="text-sm text-gray-500 mb-2">Mar 2026 &ndash; Present &middot; Remote</p>
+                    <p class="text-gray-400 leading-relaxed">Engineer production-grade Kubernetes failure and incident scenarios for an AI infrastructure evaluation platform: automated grading and validation pipelines, least-privilege RBAC hardening (scoped ClusterRoles), and debugging across RabbitMQ, Redis, Prometheus, and Kustomize-based deployments.</p>
+                </div>
+
+                <div class="border-l-2 border-gray-600 pl-5">
+                    <h4 class="text-xl font-semibold text-white">Frontend Web Developer <span class="text-gray-400 font-normal">&mdash; Softpin</span></h4>
+                    <p class="text-sm text-gray-500 mb-2">Feb 2022 &ndash; Nov 2023 &middot; Gujrat, Pakistan</p>
+                    <p class="text-gray-400 leading-relaxed">Built responsive React applications with HTML5, CSS3, and JavaScript; improved page load times ~40% through code splitting, lazy loading, and asset minification. This developer-side experience is why I build pipelines developers don't have to fight.</p>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Featured Projects Section --><section class="section" id="projects">
-            <h3 class="text-2xl sm:text-3xl font-semibold text-white mb-8 pb-3 border-b-2 border-green-500">Featured DevOps Projects</h3>
+            <h3 class="text-2xl sm:text-3xl font-semibold text-white mb-8 pb-3 border-b-2 border-green-500">Featured Projects</h3>
             <div class="projects-grid grid grid-cols-1 md:grid-cols-2 gap-8">
 
                 <!-- Project Card 1: GCP Migration (flagship) --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
@@ -95,7 +121,15 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2: CI/CD --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
+                <!-- Project Card 2: Kubernetes Scenario Engineering (Bespoke) --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
+                    <img src="Images/KubernetesScenarios.png" alt="Kubernetes failure scenario engineering" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-primary-light mb-2">Kubernetes Failure-Scenario Engineering</h4>
+                        <p class="text-gray-400">Engineer realistic production-failure scenarios on <strong class="text-gray-200">Kubernetes</strong> for an AI infrastructure evaluation platform: multi-service environments with misconfigurations, network partitions, and configuration drift, validated through automated grading pipelines and hardened with least-privilege <strong class="text-gray-200">RBAC</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: CI/CD --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
                     <img src="Images/CICDAutomation.png" alt="CI/CD Pipeline running" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary-light mb-2">CI/CD Pipeline Automation</h4>
@@ -103,7 +137,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 3: IaC --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
+                <!-- Project Card 4: IaC --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
                     <img src="Images/AWSAzure Provisioning.png" alt="Terraform code provisioning multi-cloud" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary-light mb-2">Multi-Cloud IaC Provisioning</h4>
@@ -111,7 +145,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 4: GitOps --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
+                <!-- Project Card 5: GitOps --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
                     <img src="Images/GitOps.png" alt="Argo CD UI showing sync status" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary-light mb-2">GitOps Automation with Argo CD</h4>
@@ -119,7 +153,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 5: Docker Swarm ERP --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
+                <!-- Project Card 6: Docker Swarm ERP --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
                     <img src="Images/Docker Swarm ERP.png" alt="Docker Swarm running Odoo ERP" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary-light mb-2">High-Availability Docker Swarm ERP</h4>
@@ -127,11 +161,19 @@
                     </div>
                 </div>
 
-                <!-- Project Card 6: Kubernetes Optimization --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
+                <!-- Project Card 7: Kubernetes Optimization --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
                     <img src="Images/Kubernetes Optimization.png" alt="Kubernetes cluster dashboard" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary-light mb-2">Kubernetes Cluster Optimization</h4>
                         <p class="text-gray-400">Optimized production <strong class="text-gray-200">Kubernetes</strong> clusters with resource limits, namespaces, and health probes; managed workloads via Deployments, ReplicaSets, and Services; configured Ingress controllers and <strong class="text-gray-200">Helm</strong> charts for scalable routing.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 8: React Performance (Frontend) --><div class="project-card bg-slate-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-primary-dark/30 hover:-translate-y-1">
+                    <img src="Images/ReactPerformance.png" alt="React application performance optimization" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-primary-light mb-2">React Application Performance Optimization</h4>
+                        <p class="text-gray-400">Improved page load times ~40% across production <strong class="text-gray-200">React</strong> applications through code splitting, lazy loading, and asset minification, with unit and end-to-end testing for reliability. The developer-side experience behind my pipeline design.</p>
                     </div>
                 </div>
 
@@ -174,7 +216,7 @@
                 <!-- Skill Category 4 --><div class="skill-category bg-slate-700 rounded-lg p-6 shadow-sm">
                     <h4 class="text-xl font-semibold text-white mb-4">Languages & OS</h4>
                     <ul class="flex flex-wrap gap-2">
-                        <li class="bg-blue-900/50 text-blue-300 font-medium px-3 py-1 rounded-full text-sm ring-1 ring-blue-400/30">Bash, Python, YAML</li>
+                        <li class="bg-blue-900/50 text-blue-300 font-medium px-3 py-1 rounded-full text-sm ring-1 ring-blue-400/30">Bash, Python, YAML, JavaScript</li>
                         <li class="bg-blue-900/50 text-blue-300 font-medium px-3 py-1 rounded-full text-sm ring-1 ring-blue-400/30">PostgreSQL, MySQL, MongoDB, Redis</li>
                         <li class="bg-blue-900/50 text-blue-300 font-medium px-3 py-1 rounded-full text-sm ring-1 ring-blue-400/30">Linux (Ubuntu, AlmaLinux, CentOS)</li>
                     </ul>

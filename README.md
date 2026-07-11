@@ -15,7 +15,7 @@ DevOps Engineer with 2+ years of production experience across Azure, AWS, and GC
 
 A clean, responsive single-page portfolio built with plain HTML and Tailwind CSS (CDN). No build step, no dependencies — clone and open `index.html`.
 
-**Features:** dark theme, fully responsive, sticky navigation, easy-to-edit project and skill sections.
+**Sections:** professional summary, work experience, featured projects, technical skills, and certifications. Dark theme, fully responsive, sticky navigation.
 
 ## Use This as Your Own Template
 
@@ -33,6 +33,7 @@ git clone https://github.com/muhammadwaqas964/muhammadwaqas964.github.io.git
 
 - **Header & contact:** update the profile image `src`, name (`<h1>`), title (`<h2>`), phone, and the `href` links for email, LinkedIn, and GitHub in the `<header>` section
 - **Summary:** edit the paragraph inside the section with `id="summary"`
+- **Experience:** each role is a bordered `<div>` inside the section with `id="experience"` — edit the title (`<h4>`), dates (`<p class="text-sm">`), and description; duplicate a block to add roles
 - **Projects:** each project is a `<div class="project-card">` inside the section with `id="projects"` — edit the image `src`, title (`<h4>`), and description (`<p>`); duplicate a card block to add more
 - **Skills:** edit the `<li>` tags inside each `<div class="skill-category">` in the section with `id="skills"`
 - **Certifications:** update the certification block at the end of the skills section
